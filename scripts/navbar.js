@@ -43,7 +43,9 @@ var navLinks = document.querySelectorAll('.navbar-nav .nav-link');
 
 navLinks.forEach(function(navLink) {
   navLink.addEventListener('click', function() {
-    navbarToggler.click();
+    if (navbarToggler.getAttribute('aria-expanded') === 'true') {
+      navbarToggler.click();
+    }
   });
 });
 
