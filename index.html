@@ -1,0 +1,703 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&&family=Outfit:wght@300&family=Inter:wght@300;600&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="styles/animations.css">
+    <link rel="stylesheet" href="styles/typography.css">
+    <link rel="stylesheet" href="styles/buttons.css">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/navigation.css">
+    <link rel="stylesheet" href="styles/about.css">
+    <link rel="stylesheet" href="styles/work.css">
+    <link rel="stylesheet" href="styles/resume.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/dark-mode.css">
+    <link rel="stylesheet" href="styles/scroll-to-top.css">
+
+    <title>Jaakko Inkinen - Web Developer</title>
+  </head>
+  <body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container-fluid">
+
+        <a class="navbar-brand" href="#top">
+          <svg class="navbar-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 216.09 235.09">
+            <path d="m72.96,117.55v88.45c-.07,11.21-4.38,21.42-11.4,29.1h11.41c32.46,0,58.77-26.32,58.77-58.77V58.77c-32.46,0-58.77,26.31-58.77,58.77Z"/>
+            <path d="m29.39,176.32c-16.23,0-29.39,13.16-29.39,29.39s13.16,29.39,29.39,29.39,29.39-13.16,29.39-29.39-13.16-29.39-29.39-29.39Z"/>
+            <path d="m204.68,0c-32.39,0-58.65,26.2-58.77,58.56h0v117.76c32.46,0,58.77-26.31,58.77-58.77V29.39c0-11.33,4.32-21.64,11.41-29.39h-11.41Z"/>
+          </svg>
+        </a>
+
+        <div class="navbar-options">
+          <label class="switch">
+            <input type="checkbox" id="darkModeToggle">
+            <span class="slider"></span>
+          </label>
+  
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="hamburger">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </div>
+          </button>
+        </div>
+
+        <div id="navbarSupportedContent" class="collapse navbar-collapse">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link scroll-link" href="#about">
+                About
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scroll-link" href="#work">
+                Work
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scroll-link" href="#resume">
+                Resume
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scroll-link" href="#contact">
+                Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+      <!-- Hero -->
+      <header id="home" class="hero page-section text-center">
+        <h1 class="section-title">
+          Jaakko Inkinen
+        </h1>
+        <p class="lead">
+          I'm a <strong>web developer</strong> specialized in WordPress based in Helsinki, Finland. 
+          I like clean, elegant minimalism and simple user-friendly interfaces.
+        </p>
+        <footer class="section-footer">
+          <a class="btn btn-outline" href="#about">
+            More about me
+          </a>
+        </footer>
+      </header>
+
+      <!-- About -->
+      <section id="about" class="page-section text-center">
+        <img class="portrait" src="images/portrait_jaakko-inkinen.jpg" alt="Portrait of Jaakko Inkinen">
+        <h2 class="section-title">
+          About me
+        </h2>
+        <p class="lead">
+          I was born in Hollola, Finland</a>. From an early age
+          I've been drawn to computers and multimedia.
+          I'm a visually oriented person and I've also been drawing 
+          for as long as I can remember.
+        </p>
+        <p>
+          I studied digital media in Kymenlaakso University of Applied Sciences 
+          and graduated in 2015 as a Bachelor of Culture and Arts.
+          Currently I live in Helsinki working as a web developer at 
+          <a href="https://kaimana.fi" target="_blank">Kaimana</a>. 
+          My free time hobbies and interests include music, movies, video games and traveling.
+        </p>
+        <footer class="section-footer justify-content-center">
+          <a class="btn btn-outline" href="#work">
+            See my work
+          </a>
+        </footer>
+      </section>
+
+      <section id="work" class="page-section">
+        <header class="section-header text-center">
+          <h2 class="section-title">
+            Work
+          </h2>
+        </header>
+        <ul class="work-list">
+          <li class="work-list-item">
+            <a class="card" href="https://bottlescouts.com" target="_blank">
+              <figure class="card-img-top">
+                <img src="images/thumbnails/bottlescouts.jpg">
+                <span class="btn btn-outline external">
+                  Visit site
+                </span>
+              </figure>
+              <header class="card-header">
+                <span class="client">
+                  Bottlescouts
+                </span>
+                <h3 class="card-title">
+                  Bottlescouts
+                </h3>
+                <span class="client">
+                  Kaimana &middot; 2023
+                </span>
+                <ul class="tag-list">
+                  <li class="tag">WordPress</li>
+                  <li class="tag">WooCommerce</li>
+                  <li class="tag">Gutenberg</li>
+                  <li class="tag">Front End</li>
+                </ul>
+              </header>
+              <div class="card-body">
+                <p class="card-text">
+                  Bottlescouts is online store for quality wine that helps wine enthusiasts 
+                  with their decision-making difficulties. We built store on WordPress 
+                  and WooCommerce. I jumped into the project halfway  in to take on the 
+                  front end responsibilities and help bring the site to the finish line.
+                </p>
+              </div>
+            </a>
+          </li>
+          <li class="work-list-item">
+            <a class="card" href="https://laura.uniarts.fi" target="_blank">
+              <figure class="card-img-top">
+                <img src="images/thumbnails/laura.jpg">
+                <span class="btn btn-outline external">
+                  Visit site
+                </span>
+              </figure>
+              <header class="card-header">
+                <span class="client">
+                  Sibelius Academy
+                </span>
+                <h3 class="card-title">
+                  Laura
+                </h3>
+                <span class="client">
+                  Kaimana &middot; 2022
+                </span>
+                <ul class="tag-list">
+                  <li class="tag">WordPress</li>
+                  <li class="tag">Gutenberg</li>
+                  <li class="tag">Algolia</li>
+                  <li class="tag">Accessibility</li>
+                  <li class="tag">Front End</li>
+                </ul>
+              </header>
+              <div class="card-body">
+                <p class="card-text">
+                  Laura is a Finnish song text translation database maintained by Sibelius Academy.
+                  The site was rebuilt on WordPress following WCAG accessability standards (AA level) and using 
+                  Algolia for the search. I was mainly responsible for front-end side of the implementation. 
+                </p>
+              </div>
+            </a>
+          </li>
+          <li class="work-list-item">
+            <a class="card" href="https://kaimana.fi" target="_blank">
+              <figure class="card-img-top">
+                <img src="images/thumbnails/kaimana.jpg">
+                <span class="btn btn-outline external">
+                  Visit site
+                </span>
+              </figure>
+              <div class="card-header">
+                <span class="client">
+                  Kaimana
+                </span>
+                <h3 class="card-title">
+                  Kaimana.fi
+                </h3>
+                <span class="client">
+                  Kaimana &middot; 2022
+                </span>
+                <ul class="tag-list">
+                  <li class="tag">WordPress</li>
+                  <li class="tag">Gutenberg</li>
+                  <li class="tag">Full Stack</li>
+                </ul>
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  I was part of the internal project team responsible for building Kaimana Agency's own website.
+                  The site was developed in fluid collaboration between myself and another developer and was
+                  built fully modular with Gutenberg editor.
+                </p>
+              </div>
+            </a>
+          </li>
+          <li class="work-list-item">
+            <a class="card" href="https://pien.fi" target="_blank">
+              <figure class="card-img-top">
+                <img src="images/thumbnails/pien.jpg">
+                <span class="btn btn-outline external">
+                  Visit site
+                </span>
+              </figure>
+              <div class="card-header">
+                <span class="client">
+                  IPA Group Oy
+                </span>
+                <h3 class="card-title">
+                  Pien.fi
+                </h3>
+                <span class="client">
+                  Redland &middot; 2021
+                </span>
+                <ul class="tag-list">
+                  <li class="tag">WordPress</li>
+                  <li class="tag">WooCommerce</li>
+                  <li class="tag">Gutenberg</li>
+                  <li class="tag">Multisite</li>
+                  <li class="tag">Front End</li>
+                </ul>
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  Pien is a pioneering craft beer company based in Finland, offering 
+                  a diverse selection of quality craft beers through their online store, 
+                  Pien Webshop. We built the site and store on WordPress and WooCommerce. 
+                  I answered for the front end development of the project.
+                </p>
+              </div>
+            </a>
+          </li>
+          <li class="work-list-item">
+            <a class="card" href="https://nutricia.fi" target="_blank">
+              <figure class="card-img-top">
+                <img src="images/thumbnails/nutricia.jpg">
+                <span class="btn btn-outline external">
+                  Visit site
+                </span>
+              </figure>
+              <div class="card-header">
+                <span class="client">
+                  Danone
+                </span>
+                <h3 class="card-title">
+                  Nutricia Nordic
+                </h3>
+                <span class="client">
+                  Redland &middot; 2020
+                </span>
+                <ul class="tag-list">
+                  <li class="tag">WordPress</li>
+                  <li class="tag">Multisite</li>
+                  <li class="tag">Full Stack</li>
+                </ul>
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  Nutricia is a Danone brand specialized medical nutrition and infant formula, 
+                  providing specialized nutritional products and services for people with 
+                  specific health needs. I was responsible for rebuilding their Nordic sites (nutricia.fi, nutricia.se, nutricia.no and nutricia.dk). 
+                </p>
+              </div>
+            </a>
+          </li>
+          <li class="work-list-item">
+            <a class="card" href="https://vtkl.fi" target="_blank">
+              <figure class="card-img-top">
+                <img src="images/thumbnails/vtkl.jpg">
+                <span class="btn btn-outline external">
+                  Visit site
+                </span>
+              </figure>
+              <div class="card-header">
+                <span class="client">
+                  VTKL Vanhustyön keskusliitto
+                </span>
+                <h3 class="card-title">
+                  Vtkl.fi & Vanheneminen.fi
+                </h3>
+                <span class="client">
+                  Redland &middot; 2019
+                </span>
+                <ul class="tag-list">
+                  <li class="tag">WordPress</li>
+                  <li class="tag">Multisite</li>
+                  <li class="tag">Accessibility (AA)</li>
+                  <li class="tag">Full Stack</li>
+                </ul>
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  The Finnish Association for the Welfare of Older Adults 
+                  is an active opinion leader supporting the well-being of elderly people 
+                  and working for the benefit of member organizations. I rebuilt their site
+                  as well as Vanheneminen.fi project. Both sites comply with 
+                  WCAG AA-level accessiblity standards.
+                </p>
+              </div>
+            </a>
+          </li>
+        </ul>
+
+        <footer class="section-footer justify-content-center">
+          <a class="btn btn-outline" href="#resume">
+            See my resume
+          </a>
+        </footer>
+  
+      </section>
+
+      <section id="resume" class="page-section">
+        <div class="section-header text-center">
+          <h2 class="section-title">
+            Curriculum Vitae
+          </h2>
+        </div>
+
+        <header class="cv-header">
+          <ul id="myTab" class="nav nav-tabs" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="experience-tab" data-bs-toggle="tab" data-bs-target="#experience-tab-pane" type="button" role="tab" aria-controls="experience-tab-pane" aria-selected="true">
+                History
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="skills-tab" data-bs-toggle="tab" data-bs-target="#skills-tab-pane" type="button" role="tab" aria-controls="skills-tab-pane" aria-selected="false">
+                Skills
+              </button>
+            </li>
+          </ul>
+        </header>
+
+        <div id="myTabContent" class="tab-content">
+
+          <div class="tab-pane fade show active" id="experience-tab-pane" role="tabpanel" aria-labelledby="experience-tab" tabindex="0">
+            <div class="cv-columns">
+              <div class="cv-section">
+                <header class="cv-section-header">
+                  <h3 class="cv-section-title">
+                    Experience
+                  </h3>
+                </header>
+                <div class="cv-section-list">
+                  <div class="cv-entry">
+    
+                    <span class="company">Kaimana</span>
+                    <div class="cv-entry-inner">
+                      <span class="job-title">Web Developer</span>
+                      <span class="date">1/2022 &ndash; Present</span>
+                      <p class="cv-entry-description">
+                        Development, small-scale development and maintenance of WordPress 
+                        sites independently and in collaboration with other developers. Projects 
+                        ranged from extensive WooCommerce stores to more traditional websites.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="cv-entry">
+                    <span class="company">Redland</span>
+                    <div class="cv-entry-inner">
+                      <span class="job-title">Web Developer</span>
+                      <span class="date">11/2019 &ndash; 12/2021</span>
+                      <p class="cv-entry-description">
+                        Development, small-scale development and maintenance of WordPress sites, 
+                        workload estimation and assisting with quotes and internal IT matters.
+                      </p>
+                    </div>
+                    <div class="cv-entry-inner">
+                      <span class="job-title">Junior Web Developer</span>
+                      <span class="date">6/2017 &ndash; 10/2019</span>
+                      <p class="cv-entry-description">
+                        Development, small-scale development and maintenance of WordPress websites, 
+                        workload estimation, content input and assisting with internal IT matters.
+                      </p>
+                    </div>
+                    <div class="cv-entry-inner">
+                      <span class="job-title">Tech Trainee</span>
+                      <span class="date">6/2017 &ndash; 10/2019</span>
+                      <p class="cv-entry-description">
+                        Content input, image and video editing, graphic design as well as
+                        other assisting tasks.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="cv-entry">
+                    <span class="company">Mainostoimisto Sektori</span>
+                    <div class="cv-entry-inner">
+                      <span class="job-title">Graphic Designer</span>
+                      <span class="date">5/2015 &ndash; 12/2015</span>
+                      <p class="cv-entry-description">
+                        Designing websites, logos, form templates, business cards, brochures 
+                        and other marketing materials as well as other assisting tasks.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="cv-section">
+                <header class="cv-section-header">
+                  <h3 class="cv-section-title">
+                    Education
+                  </h3>
+                </header>
+                <div class="cv-section-list">
+                  <div class="cv-entry">
+                    <span class="company">Kymenlaakso University of Applied Sciences</span>
+                    <div class="cv-entry-inner">
+                      <span class="job-title">Bachelor of Culture & Arts, Digital&nbsp;Media</span>
+                      <span class="date">2015</span>
+                    </div>
+                  </div>
+                  <div class="cv-entry">
+                    <span class="company">Hollolan lukio</span>
+                    <div class="cv-entry-inner">
+                      <span class="job-title">Upper Secondary School Graduate</span>
+                      <span class="date">2009</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-pane fade" id="skills-tab-pane" role="tabpanel" aria-labelledby="skills-tab" tabindex="0">
+
+            <div class="cv-columns">
+
+              <div class="cv-section">
+                <header class="cv-section-header">
+                  <h3 class="cv-section-title">
+                    Web Development
+                  </h3>
+                </header>
+                <div class="cv-section-list">
+                  
+                  <ul class="skill-list">
+                    <li class="skill-item">
+                      <span class="skill-title">
+                        WordPress
+                      </span>
+                      <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar" style="--width: 90%"></div>
+                      </div>
+                    </li>
+                    <li class="skill-item">
+                      <span class="skill-title">
+                        HTML
+                      </span>
+                      <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar" style="--width: 90%"></div>
+                      </div>
+                    </li>
+                    <li class="skill-item">
+                      <span class="skill-title">
+                        CSS / SCSS
+                      </span>
+                      <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar" style="--width: 80%"></div>
+                      </div>
+                    </li>
+                    <li class="skill-item">
+                      <span class="skill-title">
+                        JavaScript
+                      </span>
+                      <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar" style="--width: 60%"></div>
+                      </div>
+                    </li>
+                    <li class="skill-item">
+                      <span class="skill-title">
+                        jQuery
+                      </span>
+                      <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar" style="--width: 60%"></div>
+                      </div>
+                    </li>
+                    <li class="skill-item">
+                      <span class="skill-title">
+                        PHP
+                      </span>
+                      <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar" style="--width: 70%"></div>
+                      </div>
+                    </li>
+                    <li class="skill-item">
+                      <span class="skill-title">
+                        Git
+                      </span>
+                      <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar" style="--width: 40%"></div>
+                      </div>
+                    </li>
+                  </ul>
+
+                </div>
+              </div>
+
+              <div class="cv-section">
+                <header class="cv-section-header">
+                  <h3 class="cv-section-title">
+                    Design
+                  </h3>
+                </header>
+                <div class="cv-section-list">
+                  
+                  <ul class="skill-list">
+                    <li class="skill-item">
+                      <span class="skill-title">
+                        Photoshop
+                      </span>
+                      <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar" style="--width: 80%"></div>
+                      </div>
+                    </li>
+                    <li class="skill-item">
+                      <span class="skill-title">
+                        Illustrator
+                      </span>
+                      <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar" style="--width: 50%"></div>
+                      </div>
+                    </li>
+                    <li class="skill-item">
+                      <span class="skill-title">
+                        InDesign
+                      </span>
+                      <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar" style="--width: 70%"></div>
+                      </div>
+                    </li>
+                    <li class="skill-item">
+                      <span class="skill-title">
+                        After Effects
+                      </span>
+                      <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar" style="--width: 60%"></div>
+                      </div>
+                    </li>
+                  </ul>
+
+                </div>
+              </div>
+
+              <div class="cv-section">
+                <header class="cv-section-header">
+                  <h3 class="cv-section-title">
+                    Tools
+                  </h3>
+                </header>
+                <ul class="tag-list">
+                  <li class="tag">Google Workspace</li>
+                  <li class="tag">Slack</li>
+                  <li class="tag">Trello</li>
+                  <li class="tag">Jira</li>
+                  <li class="tag">GitHub</li>
+                  <li class="tag">Bitbucket</li>
+                  <li class="tag">Sourcetree</li>
+                  <li class="tag">Visual Studio Code</li>
+                  <li class="tag">Local</li>
+                  <li class="tag">Postman</li>
+                  <li class="tag">Figma</li>
+                  <li class="tag">1Password</li>
+                  <li class="tag">Adobe Creative Cloud</li>
+                </ul>
+              </div>
+
+              <div class="cv-section">
+                <header class="cv-section-header">
+                  <h3 class="cv-section-title">
+                    Languages
+                  </h3>
+                </header>
+                <ul class="cv-languages">
+                  <li class="cv-language">
+                    <span class="cv-language-title">Finnish</span>
+                    <span class="cv-language-level">Native</span>
+                  </li>
+                  <li class="cv-language">
+                    <span class="cv-language-title">English</span>
+                    <span class="cv-language-level">Fluent</span>
+                  </li>
+                  <li class="cv-language">
+                    <span class="cv-language-title">Swedish</span>
+                    <span class="cv-language-level">Intermediate</span>
+                  </li>
+                  <li class="cv-language">
+                    <span class="cv-language-title">Spanish</span>
+                    <span class="cv-language-level">Intermediate</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <footer class="section-footer justify-content-center">
+          <a class="btn btn-outline external" href="#" target="_blank">
+            Download CV
+          </a>
+        </footer>
+
+      </section>
+
+      <section id="contact" class="page-section">
+        <h2 class="section-title">
+          Get in touch
+        </h2>
+        <p class="lead text-center">
+          Interested in hiring me or just want to say hello?
+          <a href="https://linkedin.com/in/jaakkoinkinen" target="_blank">Hit&nbsp;me&nbsp;up on LinkedIn</a> and let's talk.
+        </p>
+      </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <ul class="social-menu">
+        <li class="social-item">
+          <a class="social-link" href="https://www.linkedin.com/in/jaakkoinkinen" target="_blank">
+            <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+              <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/>
+            </svg>
+            <span class="visually-hidden">
+              LinkedIn
+            </span>
+          </a>
+        </li>
+      </ul>
+      <p class="copyright-notice">
+        &copy; 2023 Jaakko Inkinen. All rights reserved.
+      </p>
+    </footer>
+
+    <a href="#top" class="scroll-to-top">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+        <path d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z"/>
+      </svg>
+      <span class="visually-hidden">
+        Scroll to top
+      </span>
+    </a>
+
+    <!-- Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+
+    <!-- Custom JS -->
+    <script src="scripts/animate.js"></script>
+    <script src="scripts/navbar.js"></script>
+    <script src="scripts/dark-mode.js"></script>
+    <script src="scripts/scroll-to-top.js"></script>
+  </body>
+</html>

@@ -1,0 +1,163 @@
+.dark-mode {
+  background-color: rgba(13, 17, 23, 1);
+  background-image: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(34,45,59,1) 100%);
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode h4,
+.dark-mode h5,
+.dark-mode h6 {
+  color: white;
+}
+
+.dark-mode a,
+.dark-mode b,
+.dark-mode strong {
+  color: white;
+}
+
+.dark-mode p a::before {
+  background-color: white;
+}
+
+.dark-mode a:hover {
+  color: white;
+}
+
+.dark-mode .icon-bar {
+  background-color: white;
+}
+
+.dark-mode .navbar {
+  background-color: transparent;
+  border: none;
+}
+
+.dark-mode .navbar.menu-open {
+  background-color: rgba(0, 0, 0, 1);
+}
+
+.dark-mode::after {
+  content: '';
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 20vh;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), transparent);
+  pointer-events: none;
+}
+
+.dark-mode .nav-link:hover,
+.dark-mode .nav-link:focus,
+.dark-mode .nav-link:focus-visible,
+.dark-mode .nav-link.active {
+  color: white;
+}
+
+.dark-mode .nav-link.active::before,
+.dark-mode .nav-link:hover::before,
+.dark-mode .nav-link:focus-visible::before {
+  background-color: white;
+}
+
+.dark-mode .btn-outline {
+  color: white;
+  border-color: rgba(255, 255, 255, 0.35);
+}
+
+.dark-mode .external::after {
+  background-image: url('../images/icons/icon_external-link-white.svg');
+}
+
+.dark-mode .btn-outline:hover,
+.dark-mode .btn-outline:focus-visible {
+  border-color: white;
+  background-color: transparent;
+}
+
+
+.dark-mode .tag {
+  color: white;
+  border-color: rgba(255, 255, 255, 0.35)
+}
+
+.dark-mode .navbar-logo path {
+  fill: white;
+}
+
+.dark-mode .card-img-top {
+  border-color: #333;
+}
+
+
+.dark-mode .social-icon path {
+  fill: rgb(112, 112, 112);
+}
+
+.dark-mode .social-link:hover .social-icon path,
+.dark-mode .social-link:focus-visible .social-icon path {
+  fill: white;
+}
+
+
+
+.dark-mode .scroll-to-top {
+  border-color: rgba(255, 255, 255, 0.35);
+  background-color: rgba(34, 45, 59, 0.7);
+}
+
+.dark-mode .scroll-to-top:hover,
+.dark-mode .scroll-to-top:focus-visible {
+  border-color: rgba(255, 255, 255, 1);
+}
+
+.dark-mode .scroll-to-top svg path {
+  fill: rgba(255, 255, 255, 1);
+}
+
+.dark-mode .scroll-to-top:hover svg path,
+.dark-mode .scroll-to-top:focus-visible svg path {
+  fill: white;
+}
+
+/**
+ * Resume
+ */
+ .dark-mode .client,
+ .dark-mode .company,
+ .dark-mode .date,
+ .dark-mode .cv-language-level,
+ .dark-mode .copyright-notice {
+   color: rgba(255, 255, 255, 0.35);
+ }
+
+.dark-mode .job-title,
+.dark-mode .cv-language-title,
+.dark-mode .skill-title {
+  color: rgba(255, 255, 255, 1);
+}
+
+.dark-mode .progress {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.dark-mode .progress-bar {
+  background-color: white;
+}
+
+.dark-mode .nav-tabs .nav-link {
+  color: rgb(112, 112, 112);
+}
+
+.dark-mode .nav-tabs .nav-link:hover,
+.dark-mode .nav-tabs .nav-link:focus-visible,
+.dark-mode .nav-tabs .nav-link.active {
+  color: rgb(255, 255, 255);
+  background-color: transparent;
+  border-color: transparent;
+}

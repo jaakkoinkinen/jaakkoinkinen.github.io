@@ -1,0 +1,268 @@
+#resume {
+  display: flex;
+  flex-direction: column;
+}
+
+.cv-section {
+  width: 100%;
+}
+
+.cv-section-header {
+  margin-bottom: 24px;
+}
+
+.cv-section-header::after {
+  content: '';
+  display: flex;
+  border-bottom: 1px solid rgb(58, 59, 63);
+  width: 0;
+  transition: width 1s;
+}
+
+.cv-section-title {
+  opacity: 0;
+  transition: translate 1s ease;
+}
+
+.cv-section-header.animate .cv-section-title {
+  animation: slideUp 1s ease, fadeIn 1s ease;
+  animation-delay: 0s, 0.3s;
+  animation-fill-mode: forwards;
+}
+
+.cv-section-header.animate::after {
+  width: 100%;
+}
+
+.cv-section-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+}
+
+.cv-entry {
+  position: relative;
+  padding-left: 48px;
+}
+
+.cv-entry-inner {
+  opacity: 0;
+}
+
+.cv-entry.animate .cv-entry-inner {
+  animation: fadeIn 1s ease;
+  animation-delay: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+.cv-entry.animate .company,
+.cv-entry.animate .date {
+  opacity: 1;
+} 
+
+.cv-entry-inner:not(:last-of-type) {
+  margin-bottom: 16px;
+}
+
+.cv-entry::before {
+  content: '';
+  display: flex;
+  position: absolute;
+  top: 4px;
+  left: -7px;
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgb(58, 59, 63);
+  border-radius: 100%;
+  z-index: 1;
+  transform: scale(0);
+  transition: all 0.15s ease;
+}
+
+.cv-entry:hover::before {
+  transform: scale(1.2) !important;
+  background-color: white;
+}
+
+.cv-entry.animate::before {
+  animation: pop 0.5s ease;
+  animation-delay: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+.cv-entry:not(:last-of-type)::after {
+  content: '';
+  display: flex;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  height: 0;
+  border-left: 1px solid rgb(58, 59, 63);
+  transition: all 1s ease;
+}
+
+.cv-entry:not(:last-of-type).animate::after {
+  height: calc(100% + 16px);
+}
+
+.company,
+.date {
+  display: block;
+  font-size: 16px;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 3.51px;
+  font-size: 11.7px;
+  font-family: 'Outfit';
+  font-weight: 300;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.date {
+  margin-bottom: 8px;
+}
+
+.job-title {
+  display: flex;
+  font-family: 'Dm Serif Display', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  text-transform: none;
+  letter-spacing: 0;
+  margin-bottom: 4px;
+}
+
+.cv-entry-description {
+  font-size: 14px;
+  line-height: 24px;
+  max-width: 640px;
+  margin: 0;
+}
+
+/* Languages */
+.cv-languages {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 24px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cv-language {
+  width: 50%;
+  opacity: 0;
+}
+
+.cv-language.animate {
+  animation: slideUp 1s ease, fadeIn 1s ease;
+  animation-delay: 0s, 0.3s;
+  animation-fill-mode: forwards;
+}
+
+.cv-language-title {
+  display: block;
+  font-family: 'Dm Serif Display', sans-serif;
+  font-size: 24px;
+}
+
+.cv-language-level {
+  display: block;
+  font-size: 14px;
+}
+
+.cv-columns {
+  display: flex;
+  flex-direction: column;
+  gap: 80px 64px;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.cv-header {
+  margin-bottom: 64px;
+}
+
+.nav-tabs {
+  justify-content: center;
+  column-gap: 24px;
+  border: 0;
+}
+
+.nav-tabs .nav-link {
+  font-family: 'Outfit', sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.nav-tabs .nav-link:hover,
+.nav-tabs .nav-link:focus-visible,
+.nav-tabs .nav-link.active {
+  background-color: transparent;
+  border-color: transparent;
+  color: rgba(0, 0, 0, 1);
+}
+
+.tab-content {
+  width: 100%;
+  max-width: 1600px;
+}
+
+.skill-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skill-title {
+  display: flex;
+  font-size: 20px;
+  font-family: 'DM Serif Display', serif;
+  margin-bottom: 8px;
+}
+
+.progress {
+  background-color: rgba(0, 0, 0, 0.15);
+  height: 4px;
+}
+
+.progress-bar {
+  position: relative;
+  background-color: rgba(0, 0, 0, 1);
+  width: 0;
+}
+
+.progress-bar.animate {
+  animation: progressBar 1s ease;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+}
+
+@media (min-width: 768px) {
+  .tab-pane .cv-section {
+    width: calc(50% - 32px);
+  }
+
+  .cv-columns {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 992px) {
+  .cv-column {
+    width: calc(50% - 32px);
+  }
+
+  .job-title {
+    font-size: 32px;
+    line-height: 36px;
+  }
+}

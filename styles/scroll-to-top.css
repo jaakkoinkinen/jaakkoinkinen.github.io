@@ -1,0 +1,49 @@
+
+/**
+ * Scroll to top
+ */
+.scroll-to-top {
+  position: fixed;
+  right: 7vw;
+  bottom: 24px;
+  display: flex;
+  width: 48px;
+  height: 48px;
+  border: 1px solid rgba(0, 0, 0, 0.35);
+  border-radius: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  padding: 16px;
+  animation-fill-mode: both;
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+.scroll-to-top.show {
+  animation: pop 0.5s ease;
+  animation-delay: 0.3s;
+  animation-fill-mode: both;
+  pointer-events: auto;
+}
+
+.scroll-to-top.hide {
+  animation: shrink 0.5s ease;
+  animation-delay: 0.3s;
+  animation-fill-mode: both;
+}
+
+.scroll-to-top svg path {
+  transition: all 0.3s ease;
+}
+
+.scroll-to-top:hover,
+.scroll-to-top:focus-visible {
+  transform: scale(1.1);
+  border-color:rgba(0, 0, 0, 1)
+}
+
+@media (min-width: 1600px) {
+  .scroll-to-top {
+    bottom: 48px;
+  }
+}
