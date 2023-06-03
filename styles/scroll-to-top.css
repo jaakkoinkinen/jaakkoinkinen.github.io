@@ -42,7 +42,7 @@
   border-color:rgba(0, 0, 0, 1)
 }
 
-@media (min-width: 9920px) {
+@media (min-width: 992px) {
   .scroll-to-top {
     bottom: 48px;
   }
