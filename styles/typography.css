@@ -135,6 +135,6 @@ strong {
   .lead {
     font-size: 2rem;
     line-height: 3rem;
-    max-width: 840px;
+    max-width: 720px;
   }
 }
