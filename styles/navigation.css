@@ -2,26 +2,27 @@
   background-color: rgba(241, 241, 241, 1);
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
   padding: 0;
-  transition: all 0.3s ease;
+  transition: top 0.3s ease;
 }
 
 .navbar.hide {
-  top: -64px;
+  top: -4rem;
 }
 
 .navbar .container-fluid {
-  padding: 4px 7vw;
+  padding: 0.25rem 7vw;
 }
 
 .navbar-brand {
-  font-size: 12px;
+  font-size: 0.75rem;
   font-family: 'Outfit', sans-serif;
   font-weight: 600;
-  letter-spacing: 3.5px;
+  letter-spacing: 0.25rem;
   text-transform: uppercase;
-  width: 48px;
-  height: 48px;
-  padding: 4px;
+  width: 3rem;
+  height: 3rem;
+  padding: 0.5rem;
+  border-radius: 100%;
 }
 
 .navbar-logo {
@@ -34,14 +35,14 @@
   display: flex;
   align-items: center;
   position: relative;
-  right: -24px;
+  right: -1.5rem;
 }
 
 .navbar-nav {
   align-items: center;
   justify-content: center;
   gap: 1vh;
-  height: calc(100vh - 64px);
+  height: calc(100vh - 4rem);
 }
 
 .nav-item {
@@ -49,16 +50,17 @@
   align-items: center;
   color: black;
   font-family: 'Dm Serif Display', sans-serif;
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: 300;
   line-height: 1;
-  letter-spacing: 2px;
+  letter-spacing: 0.25rem;
 }
 
 .nav-link {
   position: relative;
   color: black;
-  padding: 12px;
+  padding: 0.75rem 1rem !important;
+  box-shadow: none !important;
 }
 
 .nav-link::before {
@@ -79,12 +81,12 @@
 .nav-link:focus::before,
 .nav-link.active::before {
   width: auto;
-  left: 12px;
-  right: 12px;
+  left: 0.75rem;
+  right: 0.75rem;
 }
 
 .nav-link.btn {
-  padding: 16px 32px !important;
+  padding: 1rem 2rem !important;
 }
 
 .nav-link.btn::before {
@@ -99,8 +101,8 @@
   width: auto;
   height: 100%;
   border: 0;
-  border-radius: 5px;
-  padding: 20px 24px;
+  border-radius: 0.25rem;
+  padding: 1.25rem 1.5rem;
   line-height: 1;
 }
 
@@ -113,14 +115,14 @@
 }
 
 .hamburger {
-  height: 16px;
+  height: 1rem;
   transition: transform 0.15s ease;
 }
 
 .icon-bar {
   display: block;
   background: black;
-  width: 12px;
+  width: 0.75rem;
   height: 1px;
   margin: 3px 0;
   transition: all 0.2s ease;
@@ -140,16 +142,16 @@
 
 @media (min-width: 992px) {
   .navbar .container-fluid {
-    padding: 8px 7vw;
+    padding: 0.5rem 7vw;
   }
 
   .navbar.hide {
-    top: -80px;
+    top: -5rem;
   }
 
   .navbar-brand {
-    width: 64px;
-    height: 64px;
+    width: 4rem;
+    height: 4rem;
   }
 
   .navbar-brand:hover .navbar-logo {
@@ -173,10 +175,10 @@
 
   .nav-item {
     font-family: 'Outfit', sans-serif;
-    font-size: 12px;
+    font-size: 0.75rem;
     font-weight: 300;
     text-transform: uppercase;
-    letter-spacing: 3px;
+    letter-spacing: 0.25rem;
   }
 
 
@@ -184,11 +186,11 @@
 
 @media (min-width: 1200px) {
   .navbar .container-fluid {
-    padding: 16px 7vw;
+    padding: 1rem 7vw;
   }
 
   .navbar.hide {
-    top: -96px;
+    top: -6rem;
   }
 }
 
@@ -198,12 +200,17 @@
  .switch {
   position: relative;
   display: inline-block;
-  width: 60px;
-  height: 34px;
+  width: 3.5rem;
+  height: 2rem;
 }
 
 .switch input {
-  display: none;
+  opacity: 0;
+}
+
+.switch input:focus-visible + .slider {
+  outline: 1px solid #000;
+  outline-offset: 0.25rem;
 }
 
 .slider {
@@ -215,7 +222,7 @@
   bottom: 0;
   border: 1px solid rgba(0, 0, 0, 0.35);
   transition: 0.4s;
-  border-radius: 34px;
+  border-radius: 2rem;
 }
 
 .slider:hover,
@@ -227,14 +234,14 @@
 .slider:before {
   position: absolute;
   content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
+  height: 1.5rem;
+  width: 1.5rem;
+  left: 0.25rem;
   bottom: 3px;
   background-image: url('../images/icons/icon_bright.svg');
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 24px;
+  background-size: 1.5rem;
   transition: all 0.4s ease;
   border-radius: 50%;
 }
@@ -244,7 +251,7 @@ input:checked + .slider {
 }
 
 input:checked + .slider:before {
-  transform: translateX(26px);
+  transform: translateX(1.25rem);
 }
 
 .dark-mode .slider {
@@ -257,5 +264,9 @@ input:checked + .slider:before {
 
 .dark-mode .slider::before {
   background-image: url('../images/icons/icon_dark-white.svg');
-  background-size: 20px;
+  background-size: 1.25rem;
+}
+
+.dark-mode .switch input:focus-visible + .slider {
+  outline-color: #fff;
 }

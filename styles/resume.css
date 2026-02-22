@@ -8,7 +8,7 @@
 }
 
 .cv-section-header {
-  margin-bottom: 24px;
+  margin-bottom: 2.5rem;
 }
 
 .cv-section-header::after {
@@ -37,12 +37,15 @@
 .cv-section-list {
   display: flex;
   flex-direction: column;
-  row-gap: 32px;
+  row-gap: 2.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .cv-entry {
   position: relative;
-  padding-left: 48px;
+  padding-left: 3rem;
 }
 
 .cv-entry-inner {
@@ -61,58 +64,55 @@
 } 
 
 .cv-entry-inner:not(:last-of-type) {
-  margin-bottom: 16px;
+  margin-bottom: 1.25rem;
 }
 
 .cv-entry::before {
   content: '';
   display: flex;
   position: absolute;
-  top: 4px;
-  left: -7px;
-  width: 16px;
-  height: 16px;
+  left: -0.375rem;
+  width: 1rem;
+  height: 1rem;
   border: 1px solid rgb(58, 59, 63);
   border-radius: 100%;
   z-index: 1;
   transform: scale(0);
-  transition: all 0.15s ease;
-}
-
-.cv-entry:hover::before {
-  transform: scale(1.2) !important;
-  background-color: white;
+  transition: all 0.3s ease;
+  transition-delay: 0.3s;
 }
 
 .cv-entry.animate::before {
-  animation: pop 0.5s ease;
-  animation-delay: 0.3s;
-  animation-fill-mode: forwards;
+  transform: scale(1);
+  transition-delay: unset;
+}
+
+.cv-entry.animate:hover::before {
+  transform: scale(1.1);
 }
 
 .cv-entry:not(:last-of-type)::after {
   content: '';
   display: flex;
   position: absolute;
-  top: 20px;
-  left: 0;
+  top: 1rem;
+  left: 1px;
   height: 0;
   border-left: 1px solid rgb(58, 59, 63);
   transition: all 1s ease;
 }
 
 .cv-entry:not(:last-of-type).animate::after {
-  height: calc(100% + 16px);
+  height: calc(100% + 1.5rem);
 }
 
 .company,
 .date {
   display: block;
-  font-size: 16px;
-  font-size: 16px;
+  font-size: 1rem;
   text-transform: uppercase;
-  letter-spacing: 3.51px;
-  font-size: 11.7px;
+  letter-spacing: 0.25rem;
+  font-size: 0.75rem;
   font-family: 'Outfit';
   font-weight: 300;
   opacity: 0;
@@ -120,23 +120,23 @@
 }
 
 .date {
-  margin-bottom: 8px;
+  margin-bottom: 0.5rem;
 }
 
 .job-title {
   display: flex;
   font-family: 'Dm Serif Display', sans-serif;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 300;
-  line-height: 32px;
+  line-height: 2rem;
   text-transform: none;
   letter-spacing: 0;
-  margin-bottom: 4px;
+  margin-bottom: 0.25rem;
 }
 
 .cv-entry-description {
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
   max-width: 640px;
   margin: 0;
 }
@@ -145,7 +145,7 @@
 .cv-languages {
   display: flex;
   flex-wrap: wrap;
-  row-gap: 24px;
+  row-gap: 1.5rem;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -165,38 +165,40 @@
 .cv-language-title {
   display: block;
   font-family: 'Dm Serif Display', sans-serif;
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 .cv-language-level {
   display: block;
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 .cv-columns {
   display: flex;
   flex-direction: column;
-  gap: 80px 64px;
+  gap: 5rem 4rem;
   width: 100%;
-  margin-bottom: 40px;
+  margin-bottom: 2.5rem;
 }
 
 .cv-header {
-  margin-bottom: 64px;
+  margin-bottom: 4rem;
 }
 
 .nav-tabs {
   justify-content: center;
-  column-gap: 24px;
+  column-gap: 1.5rem;
   border: 0;
 }
 
 .nav-tabs .nav-link {
   font-family: 'Outfit', sans-serif;
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 300;
   text-transform: uppercase;
-  letter-spacing: 3px;
+  letter-spacing: 0.25rem;
+  border-radius: 0;
+  box-shadow: none;
 }
 
 .nav-tabs .nav-link:hover,
@@ -215,7 +217,7 @@
 .skill-list {
   display: flex;
   flex-direction: column;
-  row-gap: 16px;
+  row-gap: 1rem;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -223,14 +225,14 @@
 
 .skill-title {
   display: flex;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-family: 'DM Serif Display', serif;
-  margin-bottom: 8px;
+  margin-bottom: 0.5rem;
 }
 
 .progress {
   background-color: rgba(0, 0, 0, 0.15);
-  height: 4px;
+  height: 0.25rem;
 }
 
 .progress-bar {
@@ -247,7 +249,7 @@
 
 @media (min-width: 768px) {
   .tab-pane .cv-section {
-    width: calc(50% - 32px);
+    width: calc(50% - 2rem);
   }
 
   .cv-columns {
@@ -256,13 +258,13 @@
   }
 }
 
-@media (min-width: 992px) {
-  .cv-column {
-    width: calc(50% - 32px);
+@media (min-width: 1600px) {
+  .cv-section-title {
+    font-size: 2.5rem;
   }
 
   .job-title {
-    font-size: 32px;
-    line-height: 36px;
+    font-size: 2rem;
+    line-height: 2.25rem;
   }
 }

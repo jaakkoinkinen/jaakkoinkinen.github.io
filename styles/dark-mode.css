@@ -90,7 +90,7 @@
   fill: white;
 }
 
-.dark-mode .card-img-top {
+.dark-mode .card__thumbnail {
   border-color: #333;
 }
 

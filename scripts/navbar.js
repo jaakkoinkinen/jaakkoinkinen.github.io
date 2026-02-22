@@ -70,7 +70,7 @@ const mainNav = document.body.querySelector('.navbar');
 if (mainNav) {
   new bootstrap.ScrollSpy(document.body, {
     target: '.navbar',
-    rootMargin: '0px 0px -40%',
+    rootMargin: '0 0 -40%',
   });
 };
 

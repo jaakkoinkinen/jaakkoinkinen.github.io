@@ -3,16 +3,16 @@
   position: relative;
   display: inline-flex;
   align-items: center;
-  column-gap: 8px;
+  column-gap: 0.5rem;
   font-family: 'Outfit', sans-serif;
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 300;
   text-transform: uppercase;
-  letter-spacing: 3px;
-  line-height: 22px;
-  padding: 16px 32px;
+  letter-spacing: 0.25rem;
+  line-height: 1.25rem;
+  padding: 1rem 2rem;
   border: 1px solid transparent;
-  border-radius: 32px;
+  border-radius: 2rem;
   transition: all 0.3s ease;
   white-space: nowrap;
   opacity: 0;
@@ -20,20 +20,20 @@
 
 .btn:hover,
 .btn-focus-visible {
-  letter-spacing: 4px;
+  letter-spacing: 0.25rem;
 }
 
 .btn-primary {
-  color: white;
-  border-color: white;
-  background-color: black;
+  color: #fff;
+  border-color: #fff;
+  background-color: #000;
 }
 
 .btn-primary:hover,
 .btn-primary:focus-visible {
-  color: black;
-  border-color: black;
-  background-color: white;
+  color: #000;
+  border-color: #000;
+  background-color: #fff;
 }
 
 .btn-outline {
@@ -52,8 +52,8 @@
 .external::after {
   content: '';
   display: inline-flex;
-  width: 14px;
-  height: 14px;
+  width: 0.875rem;
+  height: 0.875rem;
   background-image: url('../images/icons/icon_external-link.svg');
   background-repeat: no-repeat;
   background-position: center;
@@ -69,6 +69,6 @@
 
 @media (min-width: 992px) {
   .btn {
-    padding: 20px 40px;
+    padding: 1.25rem 2.5rem;
   }
 }

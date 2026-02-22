@@ -4,6 +4,15 @@ body {
   background-attachment: fixed;
 }
 
+*:focus-visible {
+  outline: 1px solid #000 !important;
+  outline-offset: 0.25rem;
+}
+
+.dark-mode *:focus-visible {
+  outline-color: #fff !important;
+}
+
 .page-section {
   position: relative;
   display: flex;
@@ -19,8 +28,7 @@ body {
   display: block;
   transform: translateY(100%);
   opacity: 0;
-  margin-bottom: 24px;
-
+  margin-bottom: 3rem;
 }
 
 .section-title.animate {
@@ -33,7 +41,7 @@ body {
   display: flex;
   justify-content: center;
   width: 100%;
-  padding: 16px 0 0;
+  padding: 2rem 0 0;
 }
 
 a {
@@ -74,18 +82,18 @@ p a:focus-visible::before {
   flex-wrap: wrap;
   list-style: none;
   padding: 0;
-  gap: 8px;
+  gap: 0.5rem;
 }
 
 .tag {
   color: black;
   border: 1px solid rgba(0, 0, 0, 0.35);
   background-color: transparent;
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 300;
   white-space: nowrap;
-  padding: 4px 10px;
-  border-radius: 24px;
+  padding: 0.25rem 0.625rem;
+  border-radius: 1.5rem;
   transform: scale(0);
 }
 
@@ -97,8 +105,8 @@ p a:focus-visible::before {
 
 @media (min-width: 576px) {
   .tag {
-    font-size: 14px;
-    padding: 8px 16px;
+    font-size: 0.875rem;
+    padding: 0.5rem 1rem;
   }
 }
 
@@ -108,14 +116,14 @@ p a:focus-visible::before {
   }
 
   .section-title {
-    margin-bottom: 40px;
+    margin-bottom: 3rem;
   }
 
   .section-footer {
-    padding: 40px 0 0;
+    padding: 2.5rem 0 0;
   }
 
   .hero {
-    padding: 240px 7vw 80px;
+    padding: 240px 7vw 5rem;
   }
 }
